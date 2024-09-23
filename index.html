@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyHigh Airways - Explore the Skies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">SkyHigh Airways</div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#fleet">Fleet</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#book">Book a Flight</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <video autoplay loop muted playsinline>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Explore the Skies</h1>
+                <a href="#book" class="cta-button">Book Your Flight</a>
+            </div>
+            <a href="#fleet" class="scroll-down">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+        </section>
+
+        <section id="fleet" class="gradient-bg-1">
+            <div class="container">
+                <h2>Our Fleet</h2>
+                <div class="fleet-grid">
+                    <div class="plane">
+                        <img src="Boeing_787_N1015B_ANA_Airlines_(27611880663)_(cropped).jpg" alt="Boeing 787 Dreamliner">
+                        <div class="plane-info">
+                            <h3>Boeing 787 Dreamliner</h3>
+                            <p>Range: 7,355 nmi</p>
+                            <p>Capacity: 330 passengers</p>
+                        </div>
+                    </div>
+                    <div class="plane">
+                        <img src="/placeholder.svg?height=300&width=400&text=Airbus A350" alt="Airbus A350">
+                        <div class="plane-info">
+                            <h3>Airbus A350</h3>
+                            <p>Range: 8,100 nmi</p>
+                            <p>Capacity: 350 passengers</p>
+                        </div>
+                    </div>
+                    <div class="plane">
+                        <img src="/placeholder.svg?height=300&width=400&text=Embraer E175" alt="Embraer E175">
+                        <div class="plane-info">
+                            <h3>Embraer E175</h3>
+                            <p>Range: 2,200 nmi</p>
+                            <p>Capacity: 76 passengers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="gradient-bg-2">
+            <div class="container">
+                <h2>Popular Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination">
+                        <img src="/placeholder.svg?height=300&width=400&text=New York" alt="New York">
+                        <div class="destination-info">
+                            <h3>New York</h3>
+                            <p>Daily flights available</p>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img src="/placeholder.svg?height=300&width=400&text=Tokyo" alt="Tokyo">
+                        <div class="destination-info">
+                            <h3>Tokyo</h3>
+                            <p>3 flights per week</p>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img src="/placeholder.svg?height=300&width=400&text=Paris" alt="Paris">
+                        <div class="destination-info">
+                            <h3>Paris</h3>
+                            <p>Daily flights available</p>
+                        </div>
+                    </div>
+                    <div class="destination">
+                        <img src="/placeholder.svg?height=300&width=400&text=Sydney" alt="Sydney">
+                        <div class="destination-info">
+                            <h3>Sydney</h3>
+                            <p>4 flights per week</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="book" class="gradient-bg-1">
+            <div class="container">
+                <h2>Book Your Flight</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="departure">Departure City</label>
+                        <input type="text" id="departure" name="departure" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <input type="number" id="passengers" name="passengers" min="1" max="10" required>
+                    </div>
+                    <button type="submit" class="cta-button">Search Flights</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="gradient-bg-2">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SkyHigh Airways</h3>
+                    <p>Explore the world with us</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> SkyHigh Airways. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
